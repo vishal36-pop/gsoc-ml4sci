@@ -1,0 +1,108 @@
+{
+  "modules": [
+    {
+      "events": 1000,
+      "label": "source",
+      "mem_alloc": 951,
+      "mem_free": 856,
+      "time_real": 54.185017,
+      "time_thread": 53.876273,
+      "type": "PoolSource"
+    },
+    {
+      "events": 1000,
+      "label": "TriggerResults",
+      "mem_alloc": 195,
+      "mem_free": 31,
+      "time_real": 3.773293,
+      "time_thread": 3.807259,
+      "type": "TriggerResultInserter"
+    },
+    {
+      "events": 1000,
+      "label": "p",
+      "mem_alloc": 78,
+      "mem_free": 31,
+      "time_real": 4.115273,
+      "time_thread": 4.178236,
+      "type": "PathStatusInserter"
+    },
+    {
+      "events": 1000,
+      "label": "ep",
+      "mem_alloc": 78,
+      "mem_free": 31,
+      "time_real": 8.463479,
+      "time_thread": 8.549302,
+      "type": "EndPathStatusInserter"
+    },
+    {
+      "events": 1000,
+      "label": "DetFrames",
+      "mem_alloc": 8842345,
+      "mem_free": 7861419,
+      "time_real": 22121.552722,
+      "time_thread": 2558.108544,
+      "type": "DetFrameProducer"
+    },
+    {
+      "events": 1000,
+      "label": "EGFrames",
+      "mem_alloc": 1413783,
+      "mem_free": 1392261,
+      "time_real": 408.566776,
+      "time_thread": 407.528284,
+      "type": "EGFrameProducer"
+    },
+    {
+      "events": 1000,
+      "label": "EGTagger",
+      "mem_alloc": 31542376,
+      "mem_free": 31510514,
+      "time_real": 32933.395343,
+      "time_thread": 32654.635119,
+      "type": "EGTagger"
+    },
+    {
+      "events": 1000,
+      "label": "out",
+      "mem_alloc": 1738372,
+      "mem_free": 1735460,
+      "time_real": 6575.487009,
+      "time_thread": 6567.898956,
+      "type": "PoolOutputModule"
+    },
+    {
+      "events": 1000,
+      "label": "other",
+      "mem_alloc": 2183066,
+      "mem_free": 2527360,
+      "time_real": 13633.922174,
+      "time_thread": 13609.495679,
+      "type": "other"
+    }
+  ],
+  "resources": [
+    {
+      "time_real": "real time"
+    },
+    {
+      "time_thread": "cpu time"
+    },
+    {
+      "mem_alloc": "allocated memory"
+    },
+    {
+      "mem_free": "deallocated memory"
+    }
+  ],
+  "total": {
+    "events": 1000,
+    "label": "EGClassifier",
+    "mem_alloc": 45721248,
+    "mem_free": 45027967,
+    "time_real": 75743.461086,
+    "time_thread": 55868.077652,
+    "type": "Job"
+  }
+}

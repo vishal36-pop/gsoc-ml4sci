@@ -1,0 +1,8 @@
+torch
+pandas
+numpy
+pyarrow
+glob2
+matplotlib
+onnx
+onnxruntime

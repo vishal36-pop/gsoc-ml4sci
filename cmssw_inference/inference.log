@@ -1,0 +1,39 @@
+=== Running cmsRun inference ===
+Thu Mar 12 07:03:03 CET 2026
+(' >> Loaded', 1, 'input files from list.')
+12-Mar-2026 07:06:27 CET  Initiating request to open file file:SIM_DoubleGammaPt50_Pythia8_1000Ev.root
+12-Mar-2026 07:06:28 CET  Successfully opened file file:SIM_DoubleGammaPt50_Pythia8_1000Ev.root
+12-Mar-2026 07:06:28 CET  Closed file file:SIM_DoubleGammaPt50_Pythia8_1000Ev.root
+----- Begin Fatal Exception 12-Mar-2026 07:06:28 CET-----------------------
+An exception of category 'FormatIncompatibility' occurred while
+   [0] Constructing the EventProcessor
+   [1] Constructing input source of type PoolSource
+Exception Message:
+The release you are using, "CMSSW_10_6_8_patch1" , predates
+a release ("CMSSW_12_0_2") used in writing the input file, file:SIM_DoubleGammaPt50_Pythia8_1000Ev.root.
+Forward compatibility cannot be supported.
+----- End Fatal Exception -------------------------------------------------
+Command exited with non-zero status 91
+	Command being timed: "cmsRun RecoE2E/EGTagger/python/EGInference_cfg.py inputFiles=file:SIM_DoubleGammaPt50_Pythia8_1000Ev.root maxEvents=-1 EGModelName=sample.onnx"
+	User time (seconds): 2.52
+	System time (seconds): 1.14
+	Percent of CPU this job got: 1%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:25.77
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 498664
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 483
+	Minor (reclaiming a frame) page faults: 87444
+	Voluntary context switches: 2199
+	Involuntary context switches: 91
+	Swaps: 0
+	File system inputs: 70600
+	File system outputs: 32
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 91

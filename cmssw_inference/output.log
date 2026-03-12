@@ -1,0 +1,161 @@
+==========================================
+STEP 1: CMSSW Environment
+==========================================
+CMSSW_10_6_8_patch1 ready (SCRAM_ARCH=slc7_amd64_gcc820)
+==========================================
+STEP 2: Install ONNX Runtime 1.1.2
+==========================================
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 3303k  100 3303k    0     0  2385k      0  0:00:01  0:00:01 --:--:-- 2385k
+ONNX Runtime installed to /home/cmsusr/onnxruntime
+/home/cmsusr/onnxruntime/include/:
+cpu_provider_factory.h
+cuda_provider_factory.h
+onnxruntime_c_api.h
+onnxruntime_cxx_api.h
+onnxruntime_cxx_inline.h
+
+/home/cmsusr/onnxruntime/lib/:
+libonnxruntime.so
+libonnxruntime.so.1.1.2
+==========================================
+STEP 3: Register onnxruntime as SCRAM tool
+==========================================
+
+Finding a value for ONNXRUNTIME_BASE:
+
+	Checks [OK] for /home/cmsusr/onnxruntime
+
+Finding a value for INCLUDE:
+
+	Checks [OK] for /home/cmsusr/onnxruntime/include
+
+Finding a value for LIBDIR:
+
+	Checks [OK] for /home/cmsusr/onnxruntime/lib
+
+
+* Library check [OK]       for libonnxruntime 
+
+
+-------------------------------
+
+
+Setting up onnxruntime version 1.1.2:  
+Updating symlinks under external/slc7_amd64_gcc820
+onnxruntime registered as SCRAM tool:
+Tool info as configured in location /home/cmsusr/CMSSW_10_6_8_patch1
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Name : onnxruntime
+Version : 1.1.2
+++++++++++++++++++++
+SCRAM_PROJECT=no
+ONNXRUNTIME_BASE=/home/cmsusr/onnxruntime
+==========================================
+STEP 4: Clone RecoE2E
+==========================================
+Cloning into 'RecoE2E'...
+RecoE2E cloned
+==========================================
+STEP 5: Fix code for ONNX Runtime 1.1.2
+==========================================
+Code fixes applied
+==========================================
+STEP 6: Build
+==========================================
+>> Local Products Rules ..... started
+>> Local Products Rules ..... done
+>> Building CMSSW version CMSSW_10_6_8_patch1 ----
+>> Subsystem BigProducts built
+>> Entering Package RecoE2E/EGTagger
+>> Creating project symlinks
+>> Entering Package RecoE2E/DataFormats
+>> Entering Package RecoE2E/FrameProducers
+>> Entering Package RecoE2E/TauTagger
+>> Entering Package RecoE2E/TopTagger
+>> Entering Package RecoE2E/tfModels
+>> Entering Package RecoE2E/QGTagger
+>> Leaving Package RecoE2E/tfModels
+>> Package RecoE2E/tfModels built
+Entering library rule at RecoE2E/DataFormats
+Entering library rule at RecoE2E/FrameProducers
+>> Compiling  /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/src/FrameStriding.cc 
+>> Compiling  /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/src/predict_tf.cc 
+>> Compiling  /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/src/FrameCropping.cc 
+Entering library rule at src/RecoE2E/TauTagger/plugins
+Entering library rule at src/RecoE2E/TopTagger/plugins
+Entering library rule at src/RecoE2E/QGTagger/plugins
+Entering library rule at src/RecoE2E/FrameProducers/plugins
+Entering library rule at src/RecoE2E/EGTagger/plugins
+>> Compiling edm plugin /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/TauTagger/plugins/TauTagger_runEvtSel_jet.cc 
+>> Compiling edm plugin /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/TauTagger/plugins/TauTagger.cc 
+>> Compiling edm plugin /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/TopTagger/plugins/TopTagger.cc 
+In file included from /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/interface/JetFrameProducer.h:65,
+                 from /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/TauTagger/interface/TauTagger.h:77,
+                 from /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/TauTagger/plugins/TauTagger_runEvtSel_jet.cc:1:
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/interface/DetFrameProducer.h:26:10: fatal error: Geometry/CommonDetUnit/interface/PixelGeomDetUnit.h: No such file or directory
+ #include "Geometry/CommonDetUnit/interface/PixelGeomDetUnit.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/src/predict_tf.cc: In function 'e2e::Frame2D e2e::predict_tf(e2e::Frame4D&, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)':
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/src/predict_tf.cc:18:23: warning: unused variable 'session' [-Wunused-variable]
+  tensorflow::Session* session;
+                       ^~~~~~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/src/predict_tf.cc:47:15: warning: unused variable 'batchSize' [-Wunused-variable]
+ const int64_t batchSize = 2;
+               ^~~~~~~~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/src/predict_tf.cc:51:12: warning: unused variable 'numInputNodes' [-Wunused-variable]
+     size_t numInputNodes = ort_session.GetInputCount();
+            ^~~~~~~~~~~~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/src/predict_tf.cc:52:12: warning: unused variable 'numOutputNodes' [-Wunused-variable]
+     size_t numOutputNodes = ort_session.GetOutputCount();
+            ^~~~~~~~~~~~~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/src/predict_tf.cc:59:31: warning: unused variable 'inputType' [-Wunused-variable]
+     ONNXTensorElementDataType inputType = inputTensorInfo.GetElementType();
+                               ^~~~~~~~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/src/predict_tf.cc:74:31: warning: unused variable 'outputType' [-Wunused-variable]
+     ONNXTensorElementDataType outputType = outputTensorInfo.GetElementType();
+                               ^~~~~~~~~~
+In file included from /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/interface/JetFrameProducer.h:65,
+                 from /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/TauTagger/interface/TauTagger.h:77,
+                 from /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/TauTagger/plugins/TauTagger.cc:2:
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/interface/DetFrameProducer.h:26:10: fatal error: Geometry/CommonDetUnit/interface/PixelGeomDetUnit.h: No such file or directory
+ #include "Geometry/CommonDetUnit/interface/PixelGeomDetUnit.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/interface/JetFrameProducer.h:65,
+                 from /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/TopTagger/interface/TopTagger.h:75,
+                 from /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/TopTagger/plugins/TopTagger.cc:2:
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/interface/DetFrameProducer.h:26:10: fatal error: Geometry/CommonDetUnit/interface/PixelGeomDetUnit.h: No such file or directory
+ #include "Geometry/CommonDetUnit/interface/PixelGeomDetUnit.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/interface/JetFrameProducer.h:65,
+                 from /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/TauTagger/interface/TauTagger.h:77,
+                 from /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/TauTagger/plugins/TauTagger_runEvtSel_jet.cc:1:
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/interface/DetFrameProducer.h:26:10: fatal error: Geometry/CommonDetUnit/interface/PixelGeomDetUnit.h: No such file or directory
+ #include "Geometry/CommonDetUnit/interface/PixelGeomDetUnit.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake: *** [config/SCRAM/GMake/Makefile.rules:1733: tmp/slc7_amd64_gcc820/src/RecoE2E/TauTagger/plugins/RecoE2ETauTaggerAuto/TauTagger_runEvtSel_jet.cc.o] Error 1
+gmake: *** Waiting for unfinished jobs....
+In file included from /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/interface/JetFrameProducer.h:65,
+                 from /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/TauTagger/interface/TauTagger.h:77,
+                 from /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/TauTagger/plugins/TauTagger.cc:2:
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/interface/DetFrameProducer.h:26:10: fatal error: Geometry/CommonDetUnit/interface/PixelGeomDetUnit.h: No such file or directory
+ #include "Geometry/CommonDetUnit/interface/PixelGeomDetUnit.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake: *** [config/SCRAM/GMake/Makefile.rules:1733: tmp/slc7_amd64_gcc820/src/RecoE2E/TauTagger/plugins/RecoE2ETauTaggerAuto/TauTagger.cc.o] Error 1
+In file included from /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/interface/JetFrameProducer.h:65,
+                 from /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/TopTagger/interface/TopTagger.h:75,
+                 from /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/TopTagger/plugins/TopTagger.cc:2:
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/interface/DetFrameProducer.h:26:10: fatal error: Geometry/CommonDetUnit/interface/PixelGeomDetUnit.h: No such file or directory
+ #include "Geometry/CommonDetUnit/interface/PixelGeomDetUnit.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake: *** [config/SCRAM/GMake/Makefile.rules:1733: tmp/slc7_amd64_gcc820/src/RecoE2E/TopTagger/plugins/RecoE2ETopTaggerAuto/TopTagger.cc.o] Error 1
+gmake: *** [There are compilation/build errors. Please see the detail log above.] Error 2

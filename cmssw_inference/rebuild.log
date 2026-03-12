@@ -1,0 +1,207 @@
+=== Rebuilding ===
+Reading cached build data
+>> Local Products Rules ..... started
+>> Local Products Rules ..... done
+>> Building CMSSW version CMSSW_10_6_8_patch1 ----
+>> Subsystem BigProducts built
+>> Entering Package RecoE2E/EGTagger
+>> Creating project symlinks
+>> Entering Package RecoE2E/DataFormats
+>> Entering Package RecoE2E/FrameProducers
+>> Entering Package RecoE2E/TauTagger
+>> Entering Package RecoE2E/TopTagger
+>> Entering Package RecoE2E/tfModels
+>> Entering Package RecoE2E/QGTagger
+>> Compiling edm plugin /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/EGTagger/plugins/EGTagger.cc 
+>> Compiling edm plugin /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/TauTagger/plugins/TauTagger_runEvtSel_jet.cc 
+>> Compiling edm plugin /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/TauTagger/plugins/TauTagger.cc 
+>> Compiling edm plugin /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/TopTagger/plugins/TopTagger.cc 
+>> Compiling edm plugin /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/TopTagger/plugins/TopTagger_runEvtSel_jet.cc 
+>> Leaving Package RecoE2E/tfModels
+>> Package RecoE2E/tfModels built
+>> Compiling edm plugin /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/QGTagger/plugins/QGTagger.cc 
+>> Compiling edm plugin /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/QGTagger/plugins/QGTagger_runEvtSel_jet.cc 
+>> Compiling edm plugin /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillHBHE.cc 
+>> Compiling edm plugin /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedBPIX.cc 
+>> Compiling edm plugin /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/EGFrameProducer.cc 
+>> Compiling edm plugin /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTracksAtECALadj.cc 
+>> Compiling edm plugin /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillEB.cc 
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedBPIX.cc: In function 'void fillTRKLayerAtEBBPIX(DetId, int, unsigned int, std::vector<float> (*)[2])':
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedBPIX.cc:55:7: warning: unused variable 'ieta_signed' [-Wunused-variable]
+   int ieta_signed = ieta_;
+       ^~~~~~~~~~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedBPIX.cc: In member function 'void DetFrameProducer::fillTRKlayersAtECALstitchedBPIX(const edm::Event&, const edm::EventSetup&, unsigned int)':
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedBPIX.cc:153:18: warning: unused variable 'detType' [-Wunused-variable]
+     unsigned int detType=detId.det(); // det type, tracker=1
+                  ^~~~~~~
+>> Compiling edm plugin /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTracksAtECALstitched.cc 
+>> Compiling edm plugin /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/JetFrameProducer.cc 
+>> Compiling edm plugin /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTID.cc 
+>> Compiling edm plugin /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTOB.cc 
+>> Compiling edm plugin /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTEC.cc 
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTID.cc: In function 'void fillTRKLayerAtECAL_with_EEprojTID(TH2F*, std::vector<float>&, TH2F*, int, int)':
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTID.cc:12:21: warning: unused variable 'ieta_signed_' [-Wunused-variable]
+   int ieta_global_, ieta_signed_;
+                     ^~~~~~~~~~~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTID.cc: In function 'void fillHelperAtEETID(float, float, int, TH2F* (*)[2])':
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTID.cc:64:7: warning: unused variable 'iz_' [-Wunused-variable]
+   int iz_ = (eta_ > 0.) ? 1 : 0;
+       ^~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTID.cc: In member function 'unsigned int DetFrameProducer::getLayerTID(const DetId&, const TrackerTopology*)':
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTID.cc:89:17: warning: unused variable 'subid' [-Wunused-variable]
+   unsigned int  subid=detid.subdetId();
+                 ^~~~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTID.cc: In member function 'void DetFrameProducer::fillTRKlayersAtECALstitchedTID(const edm::Event&, const edm::EventSetup&, unsigned int)':
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTID.cc:208:24: warning: unused variable 'stripdet' [-Wunused-variable]
+         const GeomDet* stripdet=rechit.det();
+                        ^~~~~~~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTID.cc:199:27: warning: unused variable 'stripTopol' [-Wunused-variable]
+     const StripTopology * stripTopol = (StripTopology*)(&stripDet->topology()); ;
+                           ^~~~~~~~~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTOB.cc: In function 'void fillTRKLayerAtECAL_with_EEprojTOB(TH2F*, std::vector<float>&, TH2F*, int, int)':
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTOB.cc:12:21: warning: unused variable 'ieta_signed_' [-Wunused-variable]
+   int ieta_global_, ieta_signed_;
+                     ^~~~~~~~~~~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTOB.cc: In function 'void fillHelperAtEETOB(float, float, int, TH2F* (*)[2])':
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTOB.cc:64:7: warning: unused variable 'iz_' [-Wunused-variable]
+   int iz_ = (eta_ > 0.) ? 1 : 0;
+       ^~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTOB.cc: In member function 'unsigned int DetFrameProducer::getLayerTOB(const DetId&, const TrackerTopology*)':
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTOB.cc:89:17: warning: unused variable 'subid' [-Wunused-variable]
+   unsigned int  subid=detid.subdetId();
+                 ^~~~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTOB.cc: In member function 'void DetFrameProducer::fillTRKlayersAtECALstitchedTOB(const edm::Event&, const edm::EventSetup&, unsigned int)':
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTOB.cc:209:24: warning: unused variable 'stripdet' [-Wunused-variable]
+         const GeomDet* stripdet=rechit.det();
+                        ^~~~~~~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTOB.cc:200:27: warning: unused variable 'stripTopol' [-Wunused-variable]
+     const StripTopology * stripTopol = (StripTopology*)(&stripDet->topology()); ;
+                           ^~~~~~~~~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTID.cc:199:77: warning: 'stripDet' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     const StripTopology * stripTopol = (StripTopology*)(&stripDet->topology()); ;
+                                                                             ^
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTID.cc:244:31: warning: 'layer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             fillHelperAtEETID ( phi, eta, layer, hEvt_EE_TID);
+             ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTEC.cc: In function 'void fillTRKLayerAtECAL_with_EEprojTEC(TH2F*, std::vector<float>&, TH2F*, int, int)':
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTEC.cc:12:21: warning: unused variable 'ieta_signed_' [-Wunused-variable]
+   int ieta_global_, ieta_signed_;
+                     ^~~~~~~~~~~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTEC.cc: In function 'void fillHelperAtEETEC(float, float, int, TH2F* (*)[2])':
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTEC.cc:64:7: warning: unused variable 'iz_' [-Wunused-variable]
+   int iz_ = (eta_ > 0.) ? 1 : 0;
+       ^~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTEC.cc: In member function 'unsigned int DetFrameProducer::getLayerTEC(const DetId&, const TrackerTopology*)':
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTEC.cc:89:17: warning: unused variable 'subid' [-Wunused-variable]
+   unsigned int  subid=detid.subdetId();
+                 ^~~~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTEC.cc: In member function 'void DetFrameProducer::fillTRKlayersAtECALstitchedTEC(const edm::Event&, const edm::EventSetup&, unsigned int)':
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTEC.cc:209:24: warning: unused variable 'stripdet' [-Wunused-variable]
+         const GeomDet* stripdet=rechit.det();
+                        ^~~~~~~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTEC.cc:200:27: warning: unused variable 'stripTopol' [-Wunused-variable]
+     const StripTopology * stripTopol = (StripTopology*)(&stripDet->topology()); ;
+                           ^~~~~~~~~~
+>> Compiling edm plugin /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTIB.cc 
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTOB.cc:200:77: warning: 'stripDet' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     const StripTopology * stripTopol = (StripTopology*)(&stripDet->topology()); ;
+                                                                             ^
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTOB.cc:245:31: warning: 'layer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             fillHelperAtEETOB ( phi, eta, layer, hEvt_EE_TOB);
+             ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+>> Compiling edm plugin /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer.cc 
+>> Compiling edm plugin /home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillECALstitched.cc 
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTEC.cc:200:77: warning: 'stripDet' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     const StripTopology * stripTopol = (StripTopology*)(&stripDet->topology()); ;
+                                                                             ^
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTEC.cc:245:31: warning: 'layer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             fillHelperAtEETEC ( phi, eta, layer, hEvt_EE_TEC);
+             ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+>> Building LCG reflex dict from header file src/RecoE2E/DataFormats/src/classes.h
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTIB.cc: In function 'void fillTRKLayerAtECAL_with_EEprojTIB(TH2F*, std::vector<float>&, TH2F*, int, int)':
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTIB.cc:12:21: warning: unused variable 'ieta_signed_' [-Wunused-variable]
+   int ieta_global_, ieta_signed_;
+                     ^~~~~~~~~~~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTIB.cc: In function 'void fillHelperAtEETIB(float, float, int, TH2F* (*)[2])':
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTIB.cc:64:7: warning: unused variable 'iz_' [-Wunused-variable]
+   int iz_ = (eta_ > 0.) ? 1 : 0;
+       ^~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTIB.cc: In member function 'unsigned int DetFrameProducer::getLayerTIB(const DetId&, const TrackerTopology*)':
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTIB.cc:89:17: warning: unused variable 'subid' [-Wunused-variable]
+   unsigned int  subid=detid.subdetId();
+                 ^~~~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTIB.cc: In member function 'void DetFrameProducer::fillTRKlayersAtECALstitchedTIB(const edm::Event&, const edm::EventSetup&, unsigned int)':
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTIB.cc:210:24: warning: unused variable 'stripdet' [-Wunused-variable]
+         const GeomDet* stripdet=rechit.det();
+                        ^~~~~~~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTIB.cc:201:27: warning: unused variable 'stripTopol' [-Wunused-variable]
+     const StripTopology * stripTopol = (StripTopology*)(&stripDet->topology()); ;
+                           ^~~~~~~~~~
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTIB.cc:201:77: warning: 'stripDet' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     const StripTopology * stripTopol = (StripTopology*)(&stripDet->topology()); ;
+                                                                             ^
+/home/cmsusr/CMSSW_10_6_8_patch1/src/RecoE2E/FrameProducers/plugins/DetFrameProducer_fillTRKlayersAtECALstitchedTIB.cc:246:31: warning: 'layer' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             fillHelperAtEETIB ( phi, eta, layer, hEvt_EE_TIB);
+             ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+>> Compiling LCG dictionary: tmp/slc7_amd64_gcc820/src/RecoE2E/DataFormats/src/RecoE2EDataFormats/a/RecoE2EDataFormats_xr.cc
+>> Building shared library tmp/slc7_amd64_gcc820/src/RecoE2E/DataFormats/src/RecoE2EDataFormats/libRecoE2EDataFormats.so
+Copying tmp/slc7_amd64_gcc820/src/RecoE2E/DataFormats/src/RecoE2EDataFormats/libRecoE2EDataFormats.so to productstore area:
+>> Checking EDM Class Version for src/RecoE2E/DataFormats/src/classes_def.xml in libRecoE2EDataFormats.so
+@@@@ ----> OK  EDM Class Version 
+>> Checking EDM Class Transients in libRecoE2EDataFormats.so
+@@@@ ----> OK  EDM Class Transients 
+Leaving library rule at RecoE2E/DataFormats
+>> Building shared library tmp/slc7_amd64_gcc820/src/RecoE2E/FrameProducers/src/RecoE2EFrameProducers/libRecoE2EFrameProducers.so
+>> Leaving Package RecoE2E/DataFormats
+>> Package RecoE2E/DataFormats built
+Copying tmp/slc7_amd64_gcc820/src/RecoE2E/FrameProducers/src/RecoE2EFrameProducers/libRecoE2EFrameProducers.so to productstore area:
+Leaving library rule at RecoE2E/FrameProducers
+>> Building edm plugin tmp/slc7_amd64_gcc820/src/RecoE2E/EGTagger/plugins/RecoE2EEGTaggerAuto/libRecoE2EEGTaggerAuto.so
+>> Building edm plugin tmp/slc7_amd64_gcc820/src/RecoE2E/TauTagger/plugins/RecoE2ETauTaggerAuto/libRecoE2ETauTaggerAuto.so
+>> Building edm plugin tmp/slc7_amd64_gcc820/src/RecoE2E/TopTagger/plugins/RecoE2ETopTaggerAuto/libRecoE2ETopTaggerAuto.so
+>> Building edm plugin tmp/slc7_amd64_gcc820/src/RecoE2E/QGTagger/plugins/RecoE2EQGTaggerAuto/libRecoE2EQGTaggerAuto.so
+Leaving library rule at src/RecoE2E/TauTagger/plugins
+Leaving library rule at src/RecoE2E/TopTagger/plugins
+>> Building edm plugin tmp/slc7_amd64_gcc820/src/RecoE2E/FrameProducers/plugins/RecoE2EFrameProducersAuto/libRecoE2EFrameProducersAuto.so
+@@@@ Running edmWriteConfigs for RecoE2ETauTaggerAuto
+Leaving library rule at src/RecoE2E/EGTagger/plugins
+Leaving library rule at src/RecoE2E/QGTagger/plugins
+@@@@ Running edmWriteConfigs for RecoE2ETopTaggerAuto
+@@@@ Running edmWriteConfigs for RecoE2EQGTaggerAuto
+--- Registered EDM Plugin: RecoE2ETopTaggerAuto
+--- Registered EDM Plugin: RecoE2EQGTaggerAuto
+--- Registered EDM Plugin: RecoE2ETauTaggerAuto
+@@@@ Running edmWriteConfigs for RecoE2EEGTaggerAuto
+>> Leaving Package RecoE2E/TopTagger
+>> Leaving Package RecoE2E/QGTagger
+>> Package RecoE2E/TopTagger built
+>> Package RecoE2E/QGTagger built
+>> Leaving Package RecoE2E/TauTagger
+>> Package RecoE2E/TauTagger built
+--- Registered EDM Plugin: RecoE2EEGTaggerAuto
+>> Leaving Package RecoE2E/EGTagger
+>> Package RecoE2E/EGTagger built
+Leaving library rule at src/RecoE2E/FrameProducers/plugins
+@@@@ Running edmWriteConfigs for RecoE2EFrameProducersAuto
+--- Registered EDM Plugin: RecoE2EFrameProducersAuto
+>> Leaving Package RecoE2E/FrameProducers
+>> Package RecoE2E/FrameProducers built
+>> Subsystem RecoE2E built
+gmake[1]: Entering directory '/home/cmsusr/CMSSW_10_6_8_patch1'
+>> Local Products Rules ..... started
+>> Local Products Rules ..... done
+@@@@ Refreshing Plugins:edmPluginRefresh
+>> Creating project symlinks
+>> Done python_symlink
+>> Compiling python modules cfipython/slc7_amd64_gcc820
+>> Compiling python modules python
+>> Compiling python modules src/RecoE2E/FrameProducers/python
+>> Compiling python modules src/RecoE2E/EGTagger/python
+>> Compiling python modules src/RecoE2E/QGTagger/python
+>> Compiling python modules src/RecoE2E/TauTagger/python
+>> Compiling python modules src/RecoE2E/TopTagger/python
+>> Done generating edm plugin poisoned information
+>> All python modules compiled
+>> Plugins of all types refreshed.
+gmake[1]: Leaving directory '/home/cmsusr/CMSSW_10_6_8_patch1'
+=== BUILD EXIT CODE: 0 ===
