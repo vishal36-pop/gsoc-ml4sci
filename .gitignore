@@ -1,2 +1,5 @@
 # Ignore all Parquet files
 *.parquet
+ 
+# Ignore Python virtual environment
+.venv/
